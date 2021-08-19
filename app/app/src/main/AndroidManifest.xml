@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transportation">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Login"
             android:label="Home"
             android:exported="true" />
         <activity
