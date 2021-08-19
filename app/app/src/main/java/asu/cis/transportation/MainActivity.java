@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        final View myLayout = findViewById(R.id.splashScreen);
+        final View myLayout = findViewById(R.id.logIn);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
