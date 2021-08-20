@@ -3,19 +3,19 @@ package asu.cis.transportation;
 public class TravelsModel {
     private String from;
     private String to;
-    private Date date;
+    private String date;
     private String start;
     private String end;
     private float price;
     private int availableSeats;
 
 
-    public TravelsModel(String from, String to, int day, int month, int year, String start, String end, float price, int availableSeats) {
+    public TravelsModel(String from, String to, String date, String start, String end, float price, int availableSeats) {
         this.from = from;
         this.to = to;
         this.start = start;
         this.end = end;
-        this.date = new Date(day, month, year);
+        this.date = date;
         this.price = price;
         this.availableSeats = availableSeats;
     }
@@ -31,6 +31,14 @@ public class TravelsModel {
                 ", price=" + price +
                 ", availableSeats=" + availableSeats +
                 '}';
+    }
+
+    public String getStart() {
+        return start;
+    }
+
+    public String getEnd() {
+        return end;
     }
 
     public String getFrom() {
@@ -49,11 +57,11 @@ public class TravelsModel {
         this.to = to;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
