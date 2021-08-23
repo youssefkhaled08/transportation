@@ -50,7 +50,6 @@ public class Login extends AppCompatActivity {
                 {
                     Toast.makeText(Login.this , "Invalid User Name or Password " , Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }

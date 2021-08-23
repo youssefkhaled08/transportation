@@ -53,7 +53,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="154dp"
         android:layout_marginEnd="0dp"
-        android:autofillHints="Select" />
+        android:autofillHints="Select"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Spinner
         android:id="@+id/toSpinner"
@@ -63,7 +65,9 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="95dp"
-        android:autofillHints="Select"/>
+        android:autofillHints="Select"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,15 +100,16 @@
             />
 
     </LinearLayout>
+
     <Button
+        android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Buses"
-        android:layout_marginTop="520dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/searchBtn"
-        android:textColor="@color/Silver"
-        android:backgroundTint="@color/Offred"/>
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@color/Offred"
+        android:text="Search Buses"
+        android:textColor="@color/Silver" />
 
 </RelativeLayout>
 
