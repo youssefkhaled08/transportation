@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transportation">
         <activity
+            android:name=".ChooseTravelFromTo"
+            android:exported="true" />
+        <activity
             android:name=".res"
             android:exported="true" />
         <activity

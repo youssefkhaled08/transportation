@@ -20,9 +20,9 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnLogin = findViewById(R.id.btnRegister);
-        etUserName = findViewById(R.id.inputUsername);
-        etPassword = findViewById(R.id.registerInputPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        etUserName = findViewById(R.id.loginUsername);
+        etPassword = findViewById(R.id.loginPassword);
         btnRegister = findViewById(R.id.btnToRegister);
         databaseHelper = new DatabaseHelper(Login.this);
 
@@ -44,6 +44,8 @@ public class Login extends AppCompatActivity {
                 if (found == true)
                 {
                     Toast.makeText(Login.this , "Correct" , Toast.LENGTH_SHORT).show();
+                   Intent intent = new Intent(Login.this , ChooseTravelFromTo.class);
+                    startActivity(intent);
 
                 }
                 else

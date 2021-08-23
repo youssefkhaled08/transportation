@@ -18,9 +18,9 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        etEmail = findViewById(R.id.registerInputEmail);
-        etUserName = findViewById(R.id.inputUsername);
-        etPassword = findViewById(R.id.registerInputPassword);
+        etEmail = findViewById(R.id.registerEmail);
+        etUserName = findViewById(R.id.registerUsername);
+        etPassword = findViewById(R.id.registerPassword);
         btnRegister = findViewById(R.id.btnRegister);
         databaseHelper = new DatabaseHelper(Register.this);
 
