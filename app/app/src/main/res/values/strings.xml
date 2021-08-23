@@ -5,7 +5,7 @@
         <item>"Cairo"</item>
         <item>"Assiut"</item>
         <item>"Aswan"</item>
-        <item>"Aswan"</item>
+        <item>"Luxor"</item>
         <item>"Bani Suef"</item>
         <item>"Daqahliya"</item>
         <item>"Giza"</item>
@@ -17,7 +17,7 @@
         <item>"Cairo"</item>
         <item>"Assiut"</item>
         <item>"Aswan"</item>
-        <item>"Aswan"</item>
+        <item>"Luxor"</item>
         <item>"Bani Suef"</item>
         <item>"Daqahliya"</item>
         <item>"Giza"</item>
@@ -48,4 +48,25 @@
         <item>"1"</item>
         <item>"3"</item>
     </string-array>
+    <string name="app">task22</string>
+    <string name="frist_text">Transportation</string>
+    <string name="second_text">Book your trip</string>
+    <string name="NAME">Name:</string>
+    <string name="FROM">From:</string>
+    <string name="TO">To:</string>
+    <string name="price">Price:</string>
+    <string name="first_Button">+</string>
+    <string name="second_button">Bus</string>
+    <string name="rese">reset</string>
+    <string name="submit" />
+    <string name="Submit">Submit</string>
+
+    <string name="my_text">Transportation</string>
+    <string name="first_button">Train</string>
+    <string name="Bus">-</string>
+    <string name="BookYourTicket">Book your trip</string>
+    <string name="travel">Traveling</string>
+    <string name="journey">Start a new journey</string>
+
+
 </resources>

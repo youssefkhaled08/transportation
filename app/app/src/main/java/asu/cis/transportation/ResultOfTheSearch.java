@@ -1,20 +1,20 @@
 package asu.cis.transportation;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 
-public class res extends AppCompatActivity {
+public class ResultOfTheSearch extends AppCompatActivity {
     RecyclerView recyclerView;
     String From[],To[],Timeout[],TimeArrive[];
     int image = R.drawable.busicon;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_res);
+        setContentView(R.layout.activity_result_of_the_search);
 
         recyclerView =findViewById(R.id.recycle);
 

@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/drawable/counter_btn.xml" value="0.2546875" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/drawable/submit_btn.xml" value="0.2546875" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_choose_train_or_bus.xml" value="0.4" />
         <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_choose_travel_from_to.xml" value="0.4" />
         <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_from.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_res.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_res.xml" value="0.536" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_result_of_the_search.xml" value="0.4" />
+        <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/activity_tickets_reservation.xml" value="0.4" />
         <entry key="..\:/Android Studio/Transportation/transportation/app/app/src/main/res/layout/eachtravel.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/drawable/ic_email.xml" value="0.2703125" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/drawable/ic_lock.xml" value="0.2703125" />

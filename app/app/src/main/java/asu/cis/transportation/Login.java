@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
                 if (found == true)
                 {
                     Toast.makeText(Login.this , "Correct" , Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(Login.this , ChooseTravelFromTo.class);
+                   Intent intent = new Intent(Login.this , ChooseTrainOrBus.class);
                     startActivity(intent);
 
                 }
