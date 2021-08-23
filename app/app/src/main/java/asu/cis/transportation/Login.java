@@ -20,9 +20,9 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnRegister);
         etUserName = findViewById(R.id.inputUsername);
-        etPassword = findViewById(R.id.inputPassword);
+        etPassword = findViewById(R.id.registerInputPassword);
         btnRegister = findViewById(R.id.btnToRegister);
         databaseHelper = new DatabaseHelper(Login.this);
 

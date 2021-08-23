@@ -8,7 +8,6 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
@@ -21,8 +20,8 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         etEmail = findViewById(R.id.registerInputEmail);
         etUserName = findViewById(R.id.inputUsername);
-        etPassword = findViewById(R.id.inputPassword);
-        btnRegister = findViewById(R.id.btnLogin);
+        etPassword = findViewById(R.id.registerInputPassword);
+        btnRegister = findViewById(R.id.btnRegister);
         databaseHelper = new DatabaseHelper(Register.this);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {

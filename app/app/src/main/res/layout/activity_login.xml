@@ -8,7 +8,7 @@
     tools:context=".Login">
 
     <View
-        android:id="@+id/regiserTopView"
+        android:id="@+id/loginTopView"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:background="@color/colorPrimary"
@@ -18,16 +18,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/registerWaveView"
+        android:id="@+id/loginWaveView"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:background="@drawable/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regiserTopView" />
+        app:layout_constraintTop_toBottomOf="@+id/loginTopView" />
 
     <ImageView
-        android:id="@+id/registerImageView"
+        android:id="@+id/loginImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/registerTopText"
+        android:id="@+id/loginTopText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -46,13 +46,13 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/registerImageView"
+        app:layout_constraintEnd_toStartOf="@+id/loginImageView"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/regiserTopView"
+        app:layout_constraintStart_toStartOf="@+id/loginTopView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/inputUsername"
+        android:id="@+id/loginUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -66,10 +66,10 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerWaveView" />
+        app:layout_constraintTop_toBottomOf="@+id/loginWaveView" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/loginPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -84,7 +84,7 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/loginUsername" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -99,8 +99,9 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
 
     <TextView
         android:id="@+id/forgotPassword"
@@ -128,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/loginOptions"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginStart="32dp"
@@ -168,6 +169,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/loginOptions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
