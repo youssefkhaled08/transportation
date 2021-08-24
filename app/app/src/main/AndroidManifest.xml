@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transportation">
         <activity
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
             android:name=".Travel"
             android:exported="true" />
         <activity
@@ -17,9 +20,6 @@
             android:exported="true" />
         <activity
             android:name=".TicketsReservation"
-            android:exported="true" />
-        <activity
-            android:name=".ChooseTrainOrBus"
             android:exported="true" />
         <activity
             android:name=".Register"
