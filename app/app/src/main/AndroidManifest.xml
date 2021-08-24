@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transportation">
         <activity
+            android:name=".Travel"
+            android:exported="true" />
+        <activity
             android:name=".ResultOfTheSearch"
             android:exported="true" />
         <activity

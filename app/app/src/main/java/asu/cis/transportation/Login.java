@@ -37,21 +37,23 @@ public class Login extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String UserName , password;
-                UserName = etUserName.getText().toString();
-                password = etPassword.getText().toString();
-                boolean found = databaseHelper.CheckUserInformation(UserName , password);
-                if (found == true)
-                {
-                    Toast.makeText(Login.this , "Correct" , Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(Login.this , ChooseTrainOrBus.class);
-                    startActivity(intent);
-
-                }
-                else
-                {
-                    Toast.makeText(Login.this , "Invalid User Name or Password " , Toast.LENGTH_SHORT).show();
-                }
+//                String UserName , password;
+//                WBRNY67.8/9)UserName = etUserName.getText().toString();
+//                password = etPassword.getText().toString();
+//                boolean found = databaseHelper.CheckUserInformation(UserName , password);
+//                if (found == true)
+//                {
+//                    Toast.makeText(Login.this , "Correct" , Toast.LENGTH_SHORT).show();
+//                   Intent intent = new Intent(Login.this , ChooseTrainOrBus.class);
+//                    startActivity(intent);
+//
+//                }
+//                else
+//                {
+//                    Toast.makeText(Login.this , "Invalid User Name or Password " , Toast.LENGTH_SHORT).show();
+//                }
+                Intent intent = new Intent(Login.this , Travel.class);
+                startActivity(intent);
             }
         });
     }
