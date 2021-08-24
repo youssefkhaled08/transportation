@@ -3,6 +3,7 @@ package asu.cis.transportation;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -22,10 +24,12 @@ import java.util.Calendar;
 import java.util.List;
 
 public class Travel extends AppCompatActivity {
+
+    private Button btnSearch;
     private Spinner fromSpinner;
     private Spinner toSpinner;
-    TextView tvdate;
-    DatePickerDialog.OnDateSetListener setListener;
+    private TextView tvdate;
+    private DatePickerDialog.OnDateSetListener setListener;
 
 
     @Override
@@ -33,6 +37,7 @@ public class Travel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel);
 
+        btnSearch = findViewById(R.id.btnSearch);
         fromSpinner = findViewById(R.id.spinnerFrom);
         toSpinner = findViewById(R.id.spinnerTo);
 
@@ -77,5 +82,11 @@ public class Travel extends AppCompatActivity {
                 tvdate.setText(date);
             }
         };
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }

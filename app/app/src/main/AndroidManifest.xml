@@ -22,9 +22,6 @@
             android:name=".ChooseTrainOrBus"
             android:exported="true" />
         <activity
-            android:name=".ChooseTravelFromTo"
-            android:exported="true" />
-        <activity
             android:name=".Register"
             android:exported="true" />
         <activity

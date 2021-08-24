@@ -19,14 +19,14 @@ public class ChooseTrainOrBus extends AppCompatActivity {
         btnBus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChooseTrainOrBus.this , ChooseTravelFromTo.class);
+                Intent intent = new Intent(ChooseTrainOrBus.this , Travel.class);
                 startActivity(intent);
             }
         });
         btnTrain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChooseTrainOrBus.this , ChooseTravelFromTo.class);
+                Intent intent = new Intent(ChooseTrainOrBus.this , Travel.class);
                 startActivity(intent);
 
             }
