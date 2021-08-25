@@ -28,20 +28,23 @@
         <entry key="..\:/Projects/transportation/app/app/src/main/res/drawable/wave.xml" value="0.2703125" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_choose_train_or_bus.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_choose_travel_from_to.xml" value="0.264" />
-        <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_dashboard.xml" value="0.536" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_from.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_res.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_result_of_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_result_of_the_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_tickets.xml" value="0.536" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_tickets_reservation.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_travel.xml" value="0.4" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/activity_travels.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/dropdown_item.xml" value="0.8" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/eachtravel.xml" value="0.264" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/spinner_dropdown_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/transportation/app/app/src/main/res/layout/travelrow.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/mipmap-anydpi-v26/busStop.xml" value="0.2462962962962963" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/mipmap-anydpi-v26/busStop_round.xml" value="0.2462962962962963" />
         <entry key="..\:/Projects/transportation/app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />

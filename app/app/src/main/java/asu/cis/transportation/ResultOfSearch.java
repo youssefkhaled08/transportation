@@ -31,7 +31,7 @@ public class ResultOfSearch extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(ResultOfSearch.this, TicketsReservation.class);
+                Intent intent = new Intent(ResultOfSearch.this, Tickets.class);
                 startActivity(intent);
             }
         });
