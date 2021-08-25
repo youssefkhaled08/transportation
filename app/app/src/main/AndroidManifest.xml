@@ -22,9 +22,6 @@
             android:name=".Travel"
             android:exported="true" />
         <activity
-            android:name=".TicketsReservation"
-            android:exported="true" />
-        <activity
             android:name=".Register"
             android:exported="true" />
         <activity
