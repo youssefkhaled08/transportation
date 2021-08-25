@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transportation">
         <activity
+            android:name=".ResultOfSearch"
+            android:exported="true" />
+        <activity
             android:name=".Dashboard"
             android:exported="true" />
         <activity
             android:name=".Travel"
-            android:exported="true" />
-        <activity
-            android:name=".ResultOfTheSearch"
             android:exported="true" />
         <activity
             android:name=".TicketsReservation"

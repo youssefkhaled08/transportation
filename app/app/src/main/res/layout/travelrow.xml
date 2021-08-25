@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="40dp"
+        app:cardMaxElevation="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textfrom"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:text="From: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textto"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textfrom"
+        android:layout_marginLeft="20dp"
+
+        android:text="To: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textdate"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textto"
+        android:layout_marginLeft="20dp"
+
+        android:text="Date: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/txttimeout"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textdate"
+        android:layout_marginLeft="20dp"
+
+        android:text="TimeOut: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textarrive"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttimeout"
+        android:layout_marginLeft="20dp"
+
+        android:text="ArriveAt: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/textprice"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textarrive"
+        android:layout_marginLeft="20dp"
+
+        android:text="Price: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/textseats"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textprice"
+        android:layout_marginLeft="20dp"
+
+        android:text="Available seat: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/from"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textfrom"
+        android:text="From: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/to"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textto"
+        android:text="To: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"></TextView>
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textdate"
+        android:text="Date: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"></TextView>
+    <TextView
+        android:id="@+id/timeout"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/txttimeout"
+        android:text="TimeOut: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/arrive"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeout"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textarrive"
+        android:text="ArriveAt: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"></TextView>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrive"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textprice"
+        android:text="Price: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"></TextView>
+    <TextView
+        android:id="@+id/seats"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textseats"
+        android:text="Available seat: "
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"></TextView>
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

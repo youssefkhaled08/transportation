@@ -85,7 +85,8 @@ public class Travel extends AppCompatActivity {
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Travel.this, ResultOfSearch.class);
+                startActivity(intent);
             }
         });
     }
