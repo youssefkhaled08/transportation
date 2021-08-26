@@ -21,7 +21,9 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Travel extends AppCompatActivity {
 
@@ -40,9 +42,11 @@ public class Travel extends AppCompatActivity {
         btnSearch = findViewById(R.id.btnSearch);
         fromSpinner = findViewById(R.id.spinnerFrom);
         toSpinner = findViewById(R.id.spinnerTo);
-
-        ArrayList<String> cities = new ArrayList<>();
-        cities.add("Alexandria");
+        DatabaseHelper databaseHelper = new DatabaseHelper(Travel.this);
+        List<String>Duplicates = databaseHelper.GetAllCities();
+        Set<String>removeDuplicates = new LinkedHashSet(Duplicates);
+        ArrayList<String> cities = new ArrayList<>(removeDuplicates);
+        /*cities.add("Alexandria");
         cities.add("Cairo");
         cities.add("Assiut");
         cities.add("Aswan");
@@ -51,7 +55,7 @@ public class Travel extends AppCompatActivity {
         cities.add("Daqahliya");
         cities.add("Giza");
         cities.add("Kafr El Sheikh");
-        cities.add("Marsa Matrouh");
+        cities.add("Marsa Matrouh");*/
         ArrayAdapter<String> citiesAdapter= new ArrayAdapter<>(
                 this, R.layout.dropdown_item,cities
         );
@@ -78,13 +82,33 @@ public class Travel extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int day) {
                 month = month+1;
-                String date = day +"/"+month+"/"+year;
+
+                String date;
+                if (month/10 == 0 && day/10 == 0)
+                {
+                    date = year+"-0"+month +"-0"+day;
+                }
+                else if (month/10 == 0)
+                {
+                    date = year+"-0"+month+"-"+day;
+                }
+                else if (day/10 == 0)
+                {
+                    date = year+"-"+month+"-0"+day;
+                }
+                else
+                {
+                    date = year+"-"+month+"-"+day;
+                }
+                ChoosedAndNeededData.ChoosedDate = date;
                 tvdate.setText(date);
             }
         };
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ChoosedAndNeededData.ChoosedFrom = fromSpinner.getSelectedItem().toString();
+                ChoosedAndNeededData.ChoosedTo = toSpinner.getSelectedItem().toString();
                 Intent intent = new Intent(Travel.this, ResultOfSearch.class);
                 startActivity(intent);
             }

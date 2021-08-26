@@ -15,6 +15,8 @@ public class Tickets extends AppCompatActivity {
     private Button btnPlus;
     private Button btnMinus;
     private Button btnSubmit;
+    private TextView txtFrom;
+    private TextView txtTo;
     private TextView txtCounter;
     private TextView txtPrice;
     private Dialog paymentPopup;
@@ -30,9 +32,11 @@ public class Tickets extends AppCompatActivity {
 
         txtCounter = findViewById(R.id.numOfTickets);
         txtPrice = findViewById(R.id.ticketsPrice);
-
+        txtFrom = findViewById(R.id.ticketsFrom);
+        txtTo = findViewById(R.id.ticketsTo);
+        txtFrom.setText(ChoosedAndNeededData.ChoosedTravelModel.getFrom());
+        txtTo.setText(ChoosedAndNeededData.ChoosedTravelModel.getTo());
         paymentPopup = new Dialog(Tickets.this);
-
         txtCounter.setText(0 + "");
         txtPrice.setText(0 + "");
         btnPlus.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +60,8 @@ public class Tickets extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DatabaseHelper databaseHelper = new DatabaseHelper(Tickets.this);
+                databaseHelper.TravelUpdateRowAvailableSeat(ChoosedAndNeededData.ChoosedTravelModel.getDate() , ChoosedAndNeededData.ChoosedTravelModel.getFrom() , ChoosedAndNeededData.ChoosedTravelModel.getTo() , ChoosedAndNeededData.ChoosedTravelModel.getStart() , ChoosedAndNeededData.ChoosedTravelModel.getEnd() , ChoosedAndNeededData.ChoosedTravelModel.getAvailableSeats()-counter);
                 paymentPopup.setContentView(R.layout.popup);
                 paymentPopup.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 paymentPopup.show();

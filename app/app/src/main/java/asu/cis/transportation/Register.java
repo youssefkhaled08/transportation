@@ -2,6 +2,7 @@ package asu.cis.transportation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -58,6 +59,11 @@ public class Register extends AppCompatActivity {
                     UserModel newUserModel = new UserModel(userName , email ,-1 , password);
                     boolean AddedSuccsessfuly = databaseHelper.AddOneUserModel(newUserModel);
                     Toast.makeText(Register.this , "Added Succsessfully  : " +AddedSuccsessfuly , Toast.LENGTH_SHORT).show();
+                    if (AddedSuccsessfuly == true)
+                    {
+                        Intent intent = new Intent(Register.this , Login.class);
+                        startActivity(intent);
+                    }
 
                 }
 

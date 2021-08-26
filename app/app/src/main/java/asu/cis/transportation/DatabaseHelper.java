@@ -223,6 +223,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return returnList;
     }
+    public List<String> GetAllCities()
+    {
+        List<TravelsModel>everyTravel = getEveryTravel();
+        List<String>returnList = new ArrayList<>();
+        for (int i = 0 ; i < everyTravel.size(); i++)
+        {
+                returnList.add(everyTravel.get(i).getFrom());
+            returnList.add(everyTravel.get(i).getTo());
+
+        }
+        return returnList;
+    }
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
